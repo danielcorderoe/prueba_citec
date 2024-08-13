@@ -1,0 +1,4 @@
+ pandas==2.2
+ numpy == 2.0
+ seaborn ==v0.13.2
+ matplotlib.pyplot == 3.5.3
