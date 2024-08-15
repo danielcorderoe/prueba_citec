@@ -25,19 +25,5 @@ def cargar_dataset(file_path, chunk_size=10000):
 
     # Concatenar todos los chunks en un solo DataFrame
     df = pd.concat(chunks, ignore_index=True)
-
-    # Optimizar tipos de datos
-#for col in df.select_dtypes(include=['object']).columns:
-        #df[col] = df[col].astype('category')
-
-    # Manejar valores nulos
-   # df.fillna(value={'CustomerID': 'Unknown'}, inplace=True)
-
     return df
 
-def importar_librerias():
-    import pandas as pd
-    import numpy as np
-    import seaborn as sns
-    import matplotlib.pyplot as plt
-    from openpyxl import load_workbook
